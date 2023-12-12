@@ -93,8 +93,8 @@ const spin = () => {
             reels[i].push(selectedSymbol);
             reelSymbols.splice(randomIndex, 1); 
         }
-        return reels;
-    }    
+    }
+    return reels;    
 };
 
 const reels = spin();
