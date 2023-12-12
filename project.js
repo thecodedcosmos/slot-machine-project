@@ -83,7 +83,6 @@ const spin = () => {
             symbols.push(symbol);
         }
     }
-};
 
     const reels = [[], [], []];
     for (let i = 0; i < COLS; i++) {
@@ -94,9 +93,9 @@ const spin = () => {
             reels[i].push(selectedSymbol);
             reelSymbols.splice(randomIndex, 1); 
         }
-    }
-    
-    return reels;
+        return reels;
+    }    
+};
 
 const reels = spin();
 console.log(reels);
